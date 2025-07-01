@@ -1,0 +1,101 @@
+store:
+    icon: src/Resources/store/icon.png
+    default_locale: en_GB
+    variants: [99,199]
+    localizations:
+        - zh_CN
+        - en_GB
+    categories:
+        - Administration
+    type: extension
+    description:
+        zh: file:src/Resources/store/zh.md
+        en: file:src/Resources/store/en.md
+    installation_manual:
+        zh: file:src/Resources/store/zh_manual.md
+        en: file:src/Resources/store/en_manual.md
+    tags:
+        zh:
+            - Tools
+            - scheduled event
+            - scheduled task
+        en:
+            - tools
+            - scheduled event
+            - scheduled task
+    highlights:
+        zh:
+            - Geplanter Task-Manager
+            - Warteschlangen-Manager
+            - Log-Viewer
+        en:
+            - Scheduled Task Manager
+            - Queue Manager
+            - Log viewer
+    features:
+        zh:
+            - Task-Protokollierung
+            - System-Status
+            - Cache-Verwaltung
+            - Geplanter Task-Manager
+            - Warteschlangen-Manager
+            - Log-Viewer
+        en:
+            - System Status
+            - Cache manager
+            - Scheduled Task Manager
+            - Queue Manager
+            - Task Logging
+            - Log viewer
+    faq:
+        zh: [ ]
+        en: [ ]
+    images:
+        -   file: src/Resources/store/img-0.png
+            activate:
+                zh: true
+                en: true
+            preview:
+                zh: true
+                en: true
+            priority: 0
+        -   file: src/Resources/store/img-1.png
+            activate:
+                zh: true
+                en: true
+            preview:
+                zh: false
+                en: false
+            priority: 0
+        -   file: src/Resources/store/img-2.png
+            activate:
+                zh: true
+                en: true
+            preview:
+                zh: false
+                en: false
+            priority: 1
+        -   file: src/Resources/store/img-3.png
+            activate:
+                zh: true
+                en: true
+            preview:
+                zh: false
+                en: false
+            priority: 0
+        -   file: src/Resources/store/img-4.png
+            activate:
+                zh: true
+                en: true
+            preview:
+                zh: false
+                en: false
+            priority: 0
+changelog:
+    enabled: true
+    pattern: '^NEXT-\d+'
+    variables:
+        ticket: '^(NEXT-\d+)\s'
+    template: |
+        {{range .Commits}}- [{{ .Message }}](https://issues.shopware.com/issues/{{ .Variables.ticket }})
+        {{end}}

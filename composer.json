@@ -1,0 +1,57 @@
+{
+    "name": "heycart/platform-demo-data",
+    "description": "swag-platform-demo-data/swag-platform-demo-data",
+    "type": "heycart-platform-plugin",
+    "version": "2.1.0",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "HeyCart AG"
+        }
+    ],
+    "require": {
+        "heycart/core": "~6.7.0"
+    },
+    "extra": {
+        "heycart-plugin-class": "Hey\\PlatformDemoData\\HeyPlatformDemoData",
+        "label": {
+            "zh-CN": "HeyCart Demo data",
+            "en-GB": "HeyCart Demo data"
+        },
+        "description": {
+            "zh-CN": "HeyCart 6 的演示数据插件。请勿在生产环境中使用！ 插件激活时会导入数据，并且会覆盖现有数据。",
+            "en-GB": "Demo data plugin for ALlinCart 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
+        },
+        "manufacturerLink": {
+            "zh-CN": "https://heycart.net",
+            "en-GB": "https://heycart.net"
+        },
+        "supportLink": {
+            "zh-CN": "https://heycart.net",
+            "en-GB": "https://heycart.net"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Hey\\PlatformDemoData\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hey\\PlatformDemoData\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs": [
+            "@php ../../../vendor/bin/php-cs-fixer fix --dry-run"
+        ],
+        "cs-fix": [
+            "@php ../../../vendor/bin/php-cs-fixer fix"
+        ],
+        "phpstan": [
+            "php ../../../src/Core/DevOps/StaticAnalyze/phpstan-bootstrap.php",
+            "php bin/phpstan-config-generator.php",
+            "../../../vendor/bin/phpstan analyze"
+        ]
+    }
+}
