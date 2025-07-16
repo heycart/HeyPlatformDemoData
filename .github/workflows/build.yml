@@ -9,6 +9,6 @@ on:
 jobs:
   build:
     name: Build
-    uses: heycart-org/github-actions/.github/workflows/build-zip.yml@main
+    uses: heycart/github-actions/.github/workflows/build-zip.yml@main
     with:
       extensionName: '${{ github.event.repository.name }}'

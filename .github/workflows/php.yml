@@ -20,14 +20,14 @@ jobs:
     name: Codestyle
     runs-on: ubuntu-latest
     steps:
-      - uses: heycart-org/github-actions/cs-fixer@main
+      - uses: heycart/github-actions/cs-fixer@main
         with:
           rules: ''
 
   phpstan:
     runs-on: ubuntu-latest
     steps:
-      - uses: heycart-org/github-actions/setup-extension@main
+      - uses: heycart/github-actions/setup-extension@main
         with:
           extensionName: '${{ github.event.repository.name }}'
           heycartVersion: '${{ matrix.heycart-version }}'
@@ -78,7 +78,7 @@ jobs:
       matrix:
         heycart-version:
           - trunk
-    uses: heycart-org/github-actions/.github/workflows/phpunit.yml@main
+    uses: heycart/github-actions/.github/workflows/phpunit.yml@main
     with:
       extensionName: '${{ github.event.repository.name }}'
       heycartVersion: '${{ matrix.heycart-version }}'
