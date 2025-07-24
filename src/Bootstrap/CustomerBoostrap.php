@@ -122,14 +122,12 @@ class CustomerBoostrap extends AbstractBootstrap
      */
     public function getCustomerPayload(): array
     {
-        $salutationId = $this->getSalutationId();
         $countryId = $this->getCountryId();
         $salesChannelId = $this->getStorefrontSalesChannel();
 
         return [
             [
                 'id' => '6c97534c2c0747f39e8751e43cb2b013',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000200000022',
                 'nickname' => '清风徐来(带收获地址)',
@@ -146,7 +144,7 @@ class CustomerBoostrap extends AbstractBootstrap
                     'countryId' => $countryId,
                     'city' => '成都市',
                     'phoneNumber' => '12345678',
-                    'salutationId' => $salutationId,
+
                     'name' => 'Admin',
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
@@ -155,7 +153,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000000000000',
                 'nickname' => '商户A',
@@ -170,7 +167,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0195afae9ece719a83b54501b9e7c869',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020000000000',
                 'nickname' => '商户B',
@@ -185,7 +181,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194263c92f87165ba7962520d9cfd67',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030000000',
                 'nickname' => '量子行者⚛️',
@@ -200,7 +195,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194263fa2da724fafe14289d08433b1',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010000',
                 'nickname' => '54程序员',
@@ -215,7 +209,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264134f77294ad989649a0613399',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010006',
                 'nickname' => '冰封王座❄️',
@@ -230,7 +223,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '019426418d3f720dab671c79d72c77cf',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010050',
                 'nickname' => 'wangwu',
@@ -245,7 +237,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942641d96c70329eee9b96f6fb4294',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030410000',
                 'nickname' => 'vip',
@@ -260,7 +251,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942643377673f2bce33486242b5d14',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1021030110000',
                 'nickname' => 'nick',
@@ -275,7 +265,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '019426438903724881be59e1386cda3b',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010001',
                 'nickname' => 'wangwang',
@@ -290,7 +279,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942644dbc9729985fb93033e93dd34',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010000',
                 'nickname' => 'cicada',
@@ -305,7 +293,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264659fa738b9bef510201faed76',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134030010000',
                 'nickname' => 'php',
@@ -320,7 +307,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942647c7f4722fa402b7c351a2407f',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010090',
                 'nickname' => 'tests',
@@ -335,7 +321,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264833fb7138ad17db0597ea600c',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010091',
                 'nickname' => 'role2',
@@ -350,7 +335,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '019426488f56702bb6327b700dbaed9a',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010092',
                 'nickname' => 'role',
@@ -365,7 +349,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942648c578707eab811b4c63ed83e4',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010093',
                 'nickname' => 'swag',
@@ -380,7 +363,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '019426490ead73f7b19cfaebcca2cc1e',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010094',
                 'nickname' => 'resources',
@@ -395,7 +377,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264956717143896db0ba03a906b5',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010095',
                 'nickname' => 'date',
@@ -410,7 +391,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942649a40f71dc92fbbd3eb92959c2',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010095',
                 'nickname' => 'data',
@@ -425,7 +405,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942649e7827309a045da7f052c6f6c',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010096',
                 'nickname' => 'git',
@@ -440,7 +419,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264a35b571148f9ef17d86254625',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010097',
                 'nickname' => 'public',
@@ -455,7 +433,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264a931371aebaa155747575cbad',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010098',
                 'nickname' => 'admin1234',
@@ -473,7 +450,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264af04371a29911b061f2ba07d4',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010099',
                 'nickname' => 'test1234',
@@ -491,7 +467,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264b47ba728da6de96c17e53df82',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010100',
                 'nickname' => 'demo1234',
@@ -509,7 +484,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264b92f073ce8e7a1865cf9143da',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010101',
                 'nickname' => 'user1234',
@@ -524,7 +498,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264be2a471b6948ab0f5366e7555',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010102',
                 'nickname' => 'user6666',
@@ -542,7 +515,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264c381a72a7b3569ade171af126',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010103',
 
@@ -558,7 +530,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264c7c7970d4ada7cdf2f9349f4e',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010104',
                 'nickname' => 'admin1111',
@@ -573,7 +544,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264cd1dd71fe9cc55b7fbffaf43b',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010105',
 
@@ -589,7 +559,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264d0f0b735e913014a8f95583d9',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010106',
                 'nickname' => 'admin3333',
@@ -605,7 +574,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264d49ee70eea65b20aa73a9c16a',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010107',
                 'nickname' => 'admin4444',
@@ -620,7 +588,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264d8eb1702c93f3d042a8f045e4',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010108',
                 'nickname' => 'admin6666',
@@ -635,7 +602,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264e0ff273a0b97c218e16f598f1',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010109',
                 'nickname' => 'admin8888',
@@ -650,7 +616,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264e503b7135b698f1e870258b74',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010110',
                 'nickname' => 'admin9999',
@@ -665,7 +630,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264ea2757062b782cc1b43140963',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010111',
                 'nickname' => 'test6666',
@@ -680,7 +644,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264ef0ed736696a45777a05c9cdd',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010112',
                 'nickname' => 'test8888',
@@ -695,7 +658,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264f2ff37266854464155d727433',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010112',
                 'nickname' => 'test9999',
@@ -713,7 +675,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264f8f2072e6ad73f3078c820143',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010113',
                 'nickname' => 'demo6666',
@@ -729,7 +690,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '0194264fcceb730f876a7028378f6a74',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010114',
                 'group' => [
@@ -739,7 +699,6 @@ class CustomerBoostrap extends AbstractBootstrap
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo8888@test.com',
                 'active' => true,
-
                 'guest' => false,
                 'newsletter' => false,
                 'lastLogin' => '2023-01-05 07:13:39.641',
@@ -748,7 +707,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942650159773f8963abb8256527538',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010115',
                 'nickname' => 'demo9999',
@@ -763,7 +721,6 @@ class CustomerBoostrap extends AbstractBootstrap
             ],
             [
                 'id' => '01942653b9a273a6b9f2058258d2f63c',
-                'salutationId' => $salutationId,
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010116',
                 'nickname' => '👍古方',
@@ -780,22 +737,6 @@ class CustomerBoostrap extends AbstractBootstrap
                 'groupId' => 'cfbd5018d38d41d8adca10d94fc8bdd6',
             ],
         ];
-    }
-
-    private function getSalutationId(): string
-    {
-        $result = $this->connection->fetchOne('
-            SELECT LOWER(HEX(COALESCE(
-	            (SELECT `id` FROM `salutation` WHERE `salutation_key` = "mr" LIMIT 1),
-	            (SELECT `id` FROM `salutation` LIMIT 1)
-            )))
-        ');
-
-        if ($result === false) {
-            throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
-        }
-
-        return (string) $result;
     }
 
     private function getCountryId(): string
