@@ -20,7 +20,7 @@
         },
         "description": {
             "zh-CN": "HeyCart 6 的演示数据插件。请勿在生产环境中使用！ 插件激活时会导入数据，并且会覆盖现有数据。",
-            "en-GB": "Demo data plugin for ALlinCart 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
+            "en-GB": "Demo data plugin for HeyCart 6. Do not use in production environments! The data is imported on plugin activation and it will overwritten existing data."
         },
         "manufacturerLink": {
             "zh-CN": "https://heycart.net",
