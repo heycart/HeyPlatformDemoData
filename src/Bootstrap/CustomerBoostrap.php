@@ -15,7 +15,7 @@ use HeyCart\Core\Framework\Uuid\Uuid;
  */
 class CustomerBoostrap extends AbstractBootstrap
 {
-    final public const HASHED_PASSWORD = '$2y$10$gV81OZLETPjUZjRP6/4VmeLBpfqFBikusc.LchPHPS7.Xn.twQ6Ga';
+    final public const HASHED_PASSWORD = '$2y$10$.4fj92PVZTlr/W7.0CF0ROLONadJe29xTIHfK8ofX5fg.Xd2BV5j2';
 
     private TranslationHelper $translationHelper;
 
