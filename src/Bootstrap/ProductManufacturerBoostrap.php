@@ -41,7 +41,7 @@ class ProductManufacturerBoostrap extends AbstractBootstrap
                     'en-GB' => 'Plugin producer',
                 ]),
                 'prefix' => 'Hey',
-                'customer_id' => '6c97534c2c0747f39e8751e43cb2b013',
+                'customerId' => '6c97534c2c0747f39e8751e43cb2b013',
             ],
         ];
     }
