@@ -333,7 +333,7 @@ class PromotionBoostrap extends AbstractBootstrap
             [
                 'id' => '01942d87a230736ba0b4eb84b0213e20',
                 'name' => $this->translationHelper->adjustTranslations([
-                    'zh-CN' => '品牌狂欢',
+                    'zh-CN' => '生产商狂欢',
                     'en-GB' => 'Brand Extravaganza',
                 ]),
                 'active' => true,
