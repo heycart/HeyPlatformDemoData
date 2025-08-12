@@ -9,6 +9,7 @@ use Hey\PlatformDemoData\Bootstrap\CustomerBoostrap;
 use Hey\PlatformDemoData\Bootstrap\DomainBoostrap;
 use Hey\PlatformDemoData\Bootstrap\MediaBoostrap;
 use Hey\PlatformDemoData\Bootstrap\ProductBoostrap;
+use Hey\PlatformDemoData\Bootstrap\ProductManufacturerBoostrap;
 use Hey\PlatformDemoData\Bootstrap\PromotionBoostrap;
 use Hey\PlatformDemoData\Bootstrap\PropertyBoostrap;
 use Hey\PlatformDemoData\Bootstrap\RuleBoostrap;
@@ -53,6 +54,7 @@ class HeyPlatformDemoData extends Plugin
             new RuleBoostrap(),
             new PropertyBoostrap(),
             new PromotionBoostrap(),
+            new ProductManufacturerBoostrap(),
             new ProductBoostrap(),
         ];
         foreach ($bootstrapper as $bootstrap) {

@@ -149,7 +149,6 @@ class CustomerBoostrap extends AbstractBootstrap
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
                 ],
-                'defaultBillingAddressId' => 'd8f0dff7ef3947979a83c42f6509f22c',
             ],
             [
                 'id' => '01942639f4c1705eb9e4435201085e5c',
