@@ -55,7 +55,7 @@ return (new Config())
         ],
     ])
     ->setUsingCache(true)
-    ->setCacheFile(Path::join($_SERVER['ALLINCART_TOOL_CACHE_ECS'] ?? __DIR__, '/var/cache/php-cs-fixer.cache'))
+    ->setCacheFile(Path::join($_SERVER['HEYCART_TOOL_CACHE_ECS'] ?? __DIR__, '/var/cache/php-cs-fixer.cache'))
     ->setFinder(
         (new Finder())
             ->in([__DIR__ . '/src', __DIR__ . '/tests'])

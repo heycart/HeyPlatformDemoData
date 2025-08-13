@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
+use Hey\PlatformDemoData\HeyPlatformDemoData;
 use HeyCart\Core\DevOps\StaticAnalyze\StaticAnalyzeKernel;
 use HeyCart\Core\Framework\Adapter\Kernel\KernelFactory;
 use HeyCart\Core\Framework\Plugin\KernelPluginLoader\StaticKernelPluginLoader;
-use Hey\PlatformDemoData\HeyPlatformDemoData;
 use Symfony\Component\Dotenv\Dotenv;
 
 $projectRoot = dirname(__DIR__, 4);
