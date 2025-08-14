@@ -1,5 +1,5 @@
 store:
-    icon: src/Resources/store/icon.png
+    icon: src/Resources/store2/icon.png
     default_locale: zh_CN
     variants: [99,199]
     localizations:
