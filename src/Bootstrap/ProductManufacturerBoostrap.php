@@ -40,7 +40,7 @@ class ProductManufacturerBoostrap extends AbstractBootstrap
                     'zh-CN' => 'Plugin producer',
                     'en-GB' => 'Plugin producer',
                 ]),
-                'prefix' => 'Hey',
+                'prefix' => 'Hey123',
                 'customerId' => '6c97534c2c0747f39e8751e43cb2b013',
             ],
         ];
