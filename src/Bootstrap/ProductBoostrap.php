@@ -70,13 +70,14 @@ class ProductBoostrap extends AbstractBootstrap
     public function getPayload(): array
     {
         $storefrontSalesChannel = $this->getStorefrontSalesChannel();
+        $taxId = $this->getTaxId();
 
         return [
             [
                 'id' => '11dc680240b04f469ccba354cbf0b967',
                 'productNumber' => 'SWDEMO10002',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 10,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -136,7 +137,7 @@ class ProductBoostrap extends AbstractBootstrap
                 'id' => '01969ce27621706288b81b3f3d1db607',
                 'productNumber' => '48961449940',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 66,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -195,7 +196,7 @@ class ProductBoostrap extends AbstractBootstrap
                 'id' => '01969ce6bfc17264ab7938fe729442cc',
                 'productNumber' => '60604719228',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 6130,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -247,7 +248,7 @@ class ProductBoostrap extends AbstractBootstrap
                 'id' => '019787a21bcf720594e1408a1d8361b2',
                 'productNumber' => '943994754',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 100,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -342,7 +343,7 @@ class ProductBoostrap extends AbstractBootstrap
                 'id' => '019787c4feab7373994867e7a55896b5',
                 'productNumber' => 'SWDEMO10002830754918',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 10,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -424,7 +425,7 @@ class ProductBoostrap extends AbstractBootstrap
                 'id' => '019787c7d22b71de80037e5629f2536c',
                 'productNumber' => 'SWDEMO100051750329709',
                 'active' => true,
-
+                'taxId' => $taxId,
                 'stock' => 50,
                 'purchaseUnit' => 1.0,
                 'referenceUnit' => 1.0,
@@ -579,6 +580,22 @@ class ProductBoostrap extends AbstractBootstrap
         ];
     }
 
+    private function getTaxId(): string
+    {
+        $result = $this->connection->fetchOne('
+            SELECT LOWER(HEX(COALESCE(
+                (SELECT `id` FROM `tax` WHERE tax_rate = "19.00" LIMIT 1),
+	            (SELECT `id` FROM `tax`  LIMIT 1)
+            )))
+        ');
+
+        if (!$result) {
+            throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
+        }
+
+        return (string)$result;
+    }
+
     private function getStorefrontSalesChannel(): string
     {
         $result = $this->connection->fetchOne('
@@ -591,6 +608,6 @@ class ProductBoostrap extends AbstractBootstrap
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string) $result;
+        return (string)$result;
     }
 }
