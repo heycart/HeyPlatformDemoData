@@ -83,6 +83,8 @@ class CustomerBoostrap extends AbstractBootstrap
      */
     public function getCustomerGroupPayload(): array
     {
+        $salutationId = $this->getSalutationId();
+
         return [
             [
                 'id' => '0194265f62517068a03a07f37a1580b7',
@@ -123,6 +125,7 @@ class CustomerBoostrap extends AbstractBootstrap
     public function getCustomerPayload(): array
     {
         $countryId = $this->getCountryId();
+        $salutationId = $this->getSalutationId();
         $salesChannelId = $this->getStorefrontSalesChannel();
 
         return [
@@ -132,8 +135,10 @@ class CustomerBoostrap extends AbstractBootstrap
                 'customerNumber' => '1000200000022',
                 'nickname' => '清风徐来(带收获地址)',
                 'password' => static::HASHED_PASSWORD,
+                'salutationId' => $salutationId,
                 'email' => 'test@test.com',
                 'active' => true,
+                'phoneNumber'=>'18000000000',
                 'guest' => false,
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
@@ -144,7 +149,7 @@ class CustomerBoostrap extends AbstractBootstrap
                     'countryId' => $countryId,
                     'city' => '成都市',
                     'phoneNumber' => '12345678',
-
+                    'salutationId' => $salutationId,
                     'name' => 'Admin',
                     'street' => '北京市长安街1号',
                     'zipcode' => '12345',
@@ -155,6 +160,8 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1000000000000',
                 'nickname' => '商户A',
+                'salutationId' => $salutationId,
+
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'test1@test.com',
                 'active' => true,
@@ -169,6 +176,8 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020000000000',
                 'nickname' => '商户B',
+                'salutationId' => $salutationId,
+
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin2@test.com',
                 'active' => true,
@@ -183,6 +192,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030000000',
                 'nickname' => '量子行者⚛️',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'shop@test.com',
                 'active' => true,
@@ -197,6 +207,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010000',
                 'nickname' => '54程序员',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'zhangsan@test.com',
                 'active' => true,
@@ -211,6 +222,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010006',
                 'nickname' => '冰封王座❄️',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'lisi@test.com',
                 'active' => true,
@@ -225,6 +237,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010050',
                 'nickname' => 'wangwu',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'wangwu@test.com',
                 'active' => true,
@@ -239,6 +252,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030410000',
                 'nickname' => 'vip',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'vip@test.com',
                 'active' => true,
@@ -253,6 +267,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1021030110000',
                 'nickname' => 'nick',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'nick@test.com',
                 'active' => true,
@@ -267,6 +282,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010001',
                 'nickname' => 'wangwang',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'wangwang@test.com',
                 'active' => true,
@@ -281,6 +297,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1020030010000',
                 'nickname' => 'cicada',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'cicada@test.com',
                 'active' => true,
@@ -295,6 +312,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134030010000',
                 'nickname' => 'php',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'php@test.com',
                 'active' => true,
@@ -309,6 +327,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010090',
                 'nickname' => 'tests',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'tests@test.com',
                 'active' => true,
@@ -323,6 +342,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010091',
                 'nickname' => 'role2',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'role2@test.com',
                 'active' => true,
@@ -337,6 +357,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010092',
                 'nickname' => 'role',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'role@test.com',
                 'active' => true,
@@ -351,6 +372,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010093',
                 'nickname' => 'swag',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'swag@test.com',
                 'active' => true,
@@ -365,6 +387,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010094',
                 'nickname' => 'resources',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'resources@test.com',
                 'active' => true,
@@ -379,6 +402,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010095',
                 'nickname' => 'date',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'date@test.com',
                 'active' => true,
@@ -393,6 +417,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010095',
                 'nickname' => 'data',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'data@test.com',
                 'active' => true,
@@ -407,6 +432,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010096',
                 'nickname' => 'git',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'git@test.com',
                 'active' => true,
@@ -421,6 +447,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010097',
                 'nickname' => 'public',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'public@test.com',
                 'active' => true,
@@ -435,6 +462,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010098',
                 'nickname' => 'admin1234',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin1234@test.com',
                 'active' => true,
@@ -452,6 +480,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010099',
                 'nickname' => 'test1234',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'test1234@test.com',
                 'active' => true,
@@ -469,6 +498,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010100',
                 'nickname' => 'demo1234',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo1234@test.com',
                 'active' => true,
@@ -486,6 +516,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010101',
                 'nickname' => 'user1234',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'user1234@test.com',
                 'active' => true,
@@ -500,6 +531,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010102',
                 'nickname' => 'user6666',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'user6666@test.com',
                 'active' => true,
@@ -516,8 +548,8 @@ class CustomerBoostrap extends AbstractBootstrap
                 'id' => '0194264c381a72a7b3569ade171af126',
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010103',
-
                 'nickname' => 'user7777',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'user7777@test.com',
                 'active' => true,
@@ -532,6 +564,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010104',
                 'nickname' => 'admin1111',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin1111@test.com',
                 'active' => true,
@@ -547,6 +580,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'customerNumber' => '1134930010105',
 
                 'nickname' => 'admin2222',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin2222@test.com',
                 'active' => true,
@@ -561,6 +595,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010106',
                 'nickname' => 'admin3333',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin3333@test.com',
                 'active' => true,
@@ -576,6 +611,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010107',
                 'nickname' => 'admin4444',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin4444@test.com',
                 'active' => false,
@@ -590,6 +626,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010108',
                 'nickname' => 'admin6666',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin6666@test.com',
                 'active' => true,
@@ -604,6 +641,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010109',
                 'nickname' => 'admin8888',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin8888@test.com',
                 'active' => true,
@@ -618,6 +656,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010110',
                 'nickname' => 'admin9999',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'admin9999@test.com',
                 'active' => true,
@@ -632,6 +671,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010111',
                 'nickname' => 'test6666',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'test6666@test.com',
                 'active' => true,
@@ -646,6 +686,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010112',
                 'nickname' => 'test8888',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'test8888@test.com',
                 'active' => false,
@@ -660,6 +701,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010112',
                 'nickname' => 'test9999',
+                'salutationId' => $salutationId,
                 'group' => [
                     'id' => '0194265fbcac71f7bd3f7ff0e50ddc92',
                 ],
@@ -677,6 +719,8 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010113',
                 'nickname' => 'demo6666',
+                'salutationId' => $salutationId,
+
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo6666@test.com',
 
@@ -695,6 +739,8 @@ class CustomerBoostrap extends AbstractBootstrap
                     'id' => '0194265f62517068a03a07f37a1580b7',
                 ],
                 'nickname' => 'demo8888',
+                'salutationId' => $salutationId,
+
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo8888@test.com',
                 'active' => true,
@@ -709,6 +755,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010115',
                 'nickname' => 'demo9999',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo9999@test.com',
                 'active' => true,
@@ -723,6 +770,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salesChannelId' => $salesChannelId,
                 'customerNumber' => '1134930010116',
                 'nickname' => '👍古方',
+                'salutationId' => $salutationId,
                 'password' => static::HASHED_PASSWORD,
                 'email' => 'demo1000@test.com',
                 'group' => [
@@ -763,6 +811,22 @@ class CustomerBoostrap extends AbstractBootstrap
 
         if ($result === false) {
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
+        }
+
+        return (string) $result;
+    }
+
+    private function getSalutationId(): string
+    {
+        $result = $this->connection->fetchOne('
+            SELECT LOWER(HEX(COALESCE(
+	            (SELECT `id` FROM `salutation` WHERE `salutation_key` = "mr" LIMIT 1),
+	            (SELECT `id` FROM `salutation` LIMIT 1)
+            )))
+        ');
+
+        if (!$result) {
+            throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
         return (string) $result;
