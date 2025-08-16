@@ -589,11 +589,11 @@ class ProductBoostrap extends AbstractBootstrap
             )))
         ');
 
-        if (!$result) {
+        if ($result === null) {
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 
     private function getStorefrontSalesChannel(): string
@@ -608,6 +608,6 @@ class ProductBoostrap extends AbstractBootstrap
             throw new \RuntimeException('No tax found, please make sure that basic data is available by running the migrations.');
         }
 
-        return (string)$result;
+        return (string) $result;
     }
 }

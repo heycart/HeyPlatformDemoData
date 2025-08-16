@@ -83,8 +83,6 @@ class CustomerBoostrap extends AbstractBootstrap
      */
     public function getCustomerGroupPayload(): array
     {
-        $salutationId = $this->getSalutationId();
-
         return [
             [
                 'id' => '0194265f62517068a03a07f37a1580b7',
@@ -138,7 +136,7 @@ class CustomerBoostrap extends AbstractBootstrap
                 'salutationId' => $salutationId,
                 'email' => 'test@test.com',
                 'active' => true,
-                'phoneNumber'=>'18000000000',
+                'phoneNumber' => '18000000000',
                 'guest' => false,
                 'newsletter' => false,
                 'lastLogin' => '2019-06-12 07:13:39.641',
@@ -825,7 +823,7 @@ class CustomerBoostrap extends AbstractBootstrap
             )))
         ');
 
-        if (!$result) {
+        if ($result === null) {
             throw new \RuntimeException('No salutation found, please make sure that basic data is available by running the migrations.');
         }
 
